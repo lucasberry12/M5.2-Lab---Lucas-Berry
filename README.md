@@ -39,7 +39,7 @@ The current color for the text is the default text color of black, and the backg
 
 Currently, navigating the site with a keyboard is a little difficult, as when tabbing through the site only the items in the navigation bar, the search bar and input button, audio controls, and related links are accessible.
 
-The article text can be written differently to make it easier for screen readers to navigate. The main changes I've made are wrapping the navigation bar in the nav element, as well as wrapping the article in article tags with specific section tags separating the different areas. I also adjusted the related sidebar to be an aside element. For the overall text I've converted the font elements to proper h1-h3 heading elements and the specific text to use p tags.
+The article text can be written differently to make it easier for screen readers to navigate. The main changes I've made are wrapping the navigation bar in the nav element, as well as wrapping the article in article tags with specific section tags separating the different areas. For the overall text I've converted the font elements to proper h1-h3 heading elements and the specific text to use p tags.
 
 ### The Images
 
@@ -60,3 +60,11 @@ We can fix the issue of the labels not being attached to the input fields by add
 ### Show/Hide Comment Control
 
 This accessibility issue can be fixed by making the button an actual button element rather than just text within a div. I added a button element within the div to keep the styling and make the css still work properly, and I did the same for my show transcript button.
+
+### The Table
+
+I fixed the accessibility issues with the table by first giving the table a caption to summarize what the table shows, which is useful for sighted and non-sighted users. I also utilized the th elements to define the table headers for the rows and columns, and used scope to specify which section they were for.
+
+### Other Considerations
+
+Other ideas I had for making the site more accessible were adding the required attribute for the comment form (name and comment) to show that they are required for submission. Another was to wrap the related sidebar in an aside instead of a div, since that better represents the purpose of the sidebar content than a div does.

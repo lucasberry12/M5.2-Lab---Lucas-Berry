@@ -5,14 +5,16 @@ const commentWrapper = document.querySelector(".comment-wrapper");
 const showHideTranscriptBtn = document.querySelector(
   ".transcript-control button"
 );
+const transcript = document.querySelector(".transcript");
 
 commentWrapper.style.display = "none";
+transcript.style.display = "none";
 
 showHideTranscriptBtn.onclick = function () {
   let showHideText = showHideTranscriptBtn.textContent;
   if (showHideText === "Show Transcript") {
     showHideTranscriptBtn.textContent = "Hide Transcript";
-    document.querySelector(".transcript").style.display = "block";
+    document.querySelector(".transcript").style.display = "flex";
   } else {
     showHideTranscriptBtn.textContent = "Show Transcript";
     document.querySelector(".transcript").style.display = "none";
