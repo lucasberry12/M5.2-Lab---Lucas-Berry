@@ -50,3 +50,13 @@ The issue of images not being accessible to screen reader uses can be easily fix
 For the audio, the way to add an alternative for deaf users is to provide a transcript, which I have done by adding a button that if pressed will showcase the transcript for the audio.
 
 For users with older browsers which don't support the audio player, I've added a link to download the audio file instead.
+
+### The Forms
+
+We can add a label to the search form that can't be seen by sighted users by using the aria-label attribute.
+
+We can fix the issue of the labels not being attached to the input fields by adding a label element that connects to the input through its id using for="id".
+
+### Show/Hide Comment Control
+
+This accessibility issue can be fixed by making the button an actual button element rather than just text within a div. I added a button element within the div to keep the styling and make the css still work properly, and I did the same for my show transcript button.
